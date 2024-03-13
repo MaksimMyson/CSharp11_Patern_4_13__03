@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharp11_Patern_4_13__03
+{
+    public interface ICommand
+    {
+        void Execute(object? parameter);
+        bool CanExecute(object? parameter);
+        event EventHandler? CanExecuteChanged;
+    }
+}
